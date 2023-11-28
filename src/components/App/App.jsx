@@ -2,7 +2,7 @@
 import { HashRouter as Router, Route, Link } from 'react-router-dom/';
 import axios from 'axios';
 import './App.css';
-import StudentForm from '../StudentForm/StudentForm.jsx';
+
 import StudentList from '../StudentList/StudentList.jsx';
 import Home from '../Home/Home.jsx';
 import AllStudents from '../allStudents/allStudents.jsx';
@@ -38,8 +38,7 @@ function App() {
                     <About />
                 </Route>
             </Router>
-            <br/>
-            <StudentForm />
+
 
             <p>Student list:</p>
             <StudentList />
