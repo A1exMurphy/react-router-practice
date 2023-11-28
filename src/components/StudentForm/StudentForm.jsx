@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 function StudentForm() {
@@ -16,6 +17,15 @@ function StudentForm() {
             data: {github_name: newStudent}
         }).then((response) => {
             console.log(response);
+
+
+//I think this is the place to envoke a function to return to the home page after successfully adding a student, but I think what I tried doesn't work because I'm trying to use a react component without it being embedded in another component.
+            // const history = useHistory()
+
+            //     const navigateHome = () => {
+            //         history.push('/')
+            //     }
+
         }).catch((err) => {
             console.log(err);
         });
