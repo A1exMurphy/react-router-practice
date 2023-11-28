@@ -2,8 +2,6 @@
 import { HashRouter as Router, Route, Link } from 'react-router-dom/';
 import axios from 'axios';
 import './App.css';
-
-import StudentList from '../StudentList/StudentList.jsx';
 import Home from '../Home/Home.jsx';
 import AllStudents from '../allStudents/allStudents.jsx';
 import About from '../About/About.jsx'
@@ -39,9 +37,6 @@ function App() {
                 </Route>
             </Router>
 
-
-            <p>Student list:</p>
-            <StudentList />
         </div>
     );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import StudentForm from '../StudentForm/StudentForm.jsx';
 
 function Home() {
-    console.log('you are home')
+    // console.log('you are home')
     return (
     <div>
         <h1>
