@@ -16,11 +16,15 @@ function App() {
             <h1 className="App-title">GitHub Student List</h1>
             </header>
             <Router>
-                {/* <link to="/"> */}
+                <Link to="/">
                     <span>Home</span>
-                {/* </link> */}
+                </Link>
+                <Link to="/allStudents">
+                    <span>Student Body</span>
+                </Link>
+                <Link to="/about">
                     <span>About</span>
-                    <span>All Students</span>
+                </Link>
 
                 <Route exact path="/">
                     <Home />
